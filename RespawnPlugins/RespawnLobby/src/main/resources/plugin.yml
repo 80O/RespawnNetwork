@@ -1,0 +1,15 @@
+name: RespawnLobby
+version: 1.0
+authors: [SpaceEmotion, SonarBeserk, TomShar]
+main: com.respawnnetwork.respawnlobby.RespawnLobby
+softdepend: [Vault]
+
+permissions:
+  respawn.building:
+    description: allows a player to build in respawn lobbies when in creative
+    default: op
+
+commands:
+   rlobby:
+      description: Main RespawnLobby command.
+      usage: /rlobby

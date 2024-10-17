@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project information -->
+    <groupId>net.respawn</groupId>
+    <artifactId>plugin-parent</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- Properties -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <jdk.version>1.7</jdk.version>
+        <jooq.version>3.3.1</jooq.version>
+        <powermock.version>1.5.4</powermock.version>
+    </properties>
+
+    <!-- Engine modules -->
+    <modules>
+        <module>GoldRush</module>
+        <module>Havok</module>
+        <module>Parkour</module>
+        <module>Point Runner</module>
+        <module>RespawnLobby</module>
+        <module>Respawn Plots</module>
+        <module>Sky Bridge Wars</module>
+        <module>Slice Games</module>
+        <module>Speed Challenge</module>
+        <module>Utils</module>
+    </modules>
+
+    <!-- Repositories -->
+    <repositories>
+        <!-- Respawn repository -->
+        <repository>
+            <id>rn-releases</id>
+            <url>http://build.respawnnetwork.com:8301/content/repositories/releases/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
+
+        <repository>
+            <id>rn-snapshots</id>
+            <url>http://build.respawnnetwork.com:8301/content/repositories/snapshots/</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+
+        <!-- Bukkit -->
+        <repository>
+            <id>bukkit-repo</id>
+            <url>http://repo.bukkit.org/content/groups/public</url>
+        </repository>
+
+        <!-- Bungee stuff -->
+        <repository>
+            <id>bungee-repo</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+
+        <!-- Other bukkit API repos -->
+        <repository>
+            <id>comphenix-rep</id>
+            <name>Comphenix Repository</name>
+            <url>http://repo.comphenix.net/content/groups/public</url>
+        </repository>
+
+        <repository>
+            <id>confuser-repo</id>
+            <url>http://ci.frostcast.net/plugin/repository/everything</url>
+        </repository>
+
+        <repository>
+            <id>jacekk-repo</id>
+            <url>http://bukkit.jacekk.co.uk:8000/plugin/repository/everything/</url>
+        </repository>
+
+        <repository>
+            <id>vault-repo</id>
+            <url>http://nexus.theyeticave.net/content/repositories/pub_releases/</url>
+        </repository>
+    </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- ================ External stuff ================ -->
+            <dependency>
+                <groupId>org.bukkit</groupId>
+                <artifactId>craftbukkit</artifactId>
+                <version>1.7.5-R0.1-SNAPSHOT</version>
+            </dependency>
+
+            <!-- Bungeecord API -->
+            <dependency>
+                <groupId>net.md-5</groupId>
+                <artifactId>bungeecord-api</artifactId>
+                <version>1.7-SNAPSHOT</version>
+            </dependency>
+
+            <!-- Some other bukkit APIs -->
+            <dependency>
+                <groupId>me.confuser</groupId>
+                <artifactId>BarAPI</artifactId>
+                <version>3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.comphenix.protocol</groupId>
+                <artifactId>ProtocolLib</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.milkbowl.vault</groupId>
+                <artifactId>Vault</artifactId>
+                <version>1.2.32</version>
+            </dependency>
+
+            <!-- Helpful Annotations -->
+            <dependency>
+                <groupId>com.intellij</groupId>
+                <artifactId>annotations</artifactId>
+                <version>12.0</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.12.6</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- jUnit + Powermock for unit testing -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-module-junit4</artifactId>
+                <version>${powermock.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-api-mockito</artifactId>
+                <version>${powermock.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <!-- ================ Internal stuff ================ -->
+            <dependency>
+                <groupId>com.respawnnetwork</groupId>
+                <artifactId>respawnlib</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- Distribution management -->
+    <distributionManagement>
+        <repository>
+            <id>rn-releases</id>
+            <name>Releases</name>
+            <url>http://build.respawnnetwork.com:8301/content/repositories/releases</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>rn-snapshots</id>
+            <name>Snapshots</name>
+            <url>http://build.respawnnetwork.com:8301/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <!-- Build settings -->
+    <build>
+        <!-- Resources -->
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <!-- Include the source jar as well -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Also generate java docs -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-docs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Define JDK for compilation -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Shading to include the compilation output of some dependencies -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <outputDirectory>${project.build.directory}/original</outputDirectory>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <artifactSet>
+                                <!-- Exclude everything what the server already provides -->
+                                <excludes>
+                                    <exclude>org.spigotmc:*</exclude>
+                                    <exclude>org.bukkit:*</exclude>
+                                    <exclude>io.netty:*</exclude>
+                                    <exclude>org.jetbrains:*</exclude>
+                                    <exclude>com.comphenix.*:*</exclude>
+                                    <exclude>com.google.gson:*</exclude>
+                                    <exclude>com.hamcrest.*:*</exclude>
+                                    <exclude>com.intellij:*</exclude>
+                                    <exclude>net.milkbowl.vault:*</exclude>
+                                    <exclude>me.confuser:*</exclude>
+                                </excludes>
+                            </artifactSet>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

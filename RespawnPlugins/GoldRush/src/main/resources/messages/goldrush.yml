@@ -1,0 +1,9 @@
+goldrush:
+    win: "{winner}&r wins the game, congratz!"
+    collected: "You collected {gold} gold for your team"
+    teleport:
+        canceled: "The teleportation has been canceled"
+        commencing: "Teleporting in {seconds} seconds.."
+shop:
+    success.unlocked: "{player} successfully unlocked {item}!"
+    error.alreadyUnlocked: "This item is already unlocked!"

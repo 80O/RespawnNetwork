@@ -1,0 +1,45 @@
+# The map cycle type
+# Valid ones are: first, once, linear and random
+cycle: once
+
+defaults:
+    difficulty: easy
+    gameRules:
+        doDaylightCycle: false
+
+# The list of maps
+maps:
+    world:
+        id: 0
+        spawnLocation:
+            world: world
+            x: -460.5
+            y: 172.5
+            z: 2102.5
+            yaw: 90
+
+        # The custom game config for this map.
+        # This will be merged with the general game config.
+        config:
+            teams.list:
+                red.spawnLocation:
+                    x: -460.5
+                    y: 172.5
+                    z: 2146.5
+                    yaw: 180
+
+                blue.spawnLocation:
+                    x: -460.5
+                    y: 172.5
+                    z: 2047.5
+
+            regions.list:
+                red:
+                    min: -448, 170, 2134
+                    max: -472, 180, 2155
+                blue:
+                    min: -448, 170, 2030
+                    max: -472, 180, 2059
+                build:
+                    min: -420, 124, 2059
+                    max: -480, 190, 2133

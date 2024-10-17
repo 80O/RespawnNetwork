@@ -1,0 +1,6 @@
+name: Havok
+version: 0.1
+authors: [SonarBeserk, TomShar]
+main: net.respawn.havok.Havok
+commands:
+  game:

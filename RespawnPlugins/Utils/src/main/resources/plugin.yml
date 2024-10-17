@@ -1,0 +1,16 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: SonarBeserk
+
+main: net.respawn.utils.Utils
+
+softdepend: [Vault, PermissionsEx]
+
+permissions:
+  respawn.admin:
+    description: permission to use administrative commands
+    default: op
+
+commands:
+  utils:

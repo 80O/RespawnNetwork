@@ -1,0 +1,96 @@
+# Name of the folder to use for the map
+map: world
+
+# The wait before the game starts
+waitBeforeStarting: 20 # in seconds
+
+# The minimum amount of players required to start
+minimumPlayers: 6
+
+# The maximum amount of players allowed to join
+maximumPlayers: 12
+
+# Kills required to win
+killsToWin: 15
+
+# The wait before players are returned to the lobby
+waitBeforeReturningPlayers: 5 #seconds
+
+# The lobby to send players to
+lobbyServerName: havok_lobby
+
+# Time between weapon changes
+changeInterval: 20 # Seconds
+
+# Should Havok stop the server when the game ends?
+stopOnEnd: false
+
+# Should tokens be given when a player wins?
+giveTokens: true
+
+# The amount of tokens gained from winning
+winnerTokens: 15
+
+# Singular token name
+tokenNameSingular: diamond
+
+# Plural token name
+tokenNamePlural: diamonds
+
+# Mysql settings
+mysql:
+
+  # Is the mysql database enabled?
+  enabled: false
+
+  # The host address of the mysql database
+  host: localhost
+
+  # Port the mysql server is on
+  port: 3306
+
+  # Database to use
+  database: utils
+
+  # Username for the database
+  user: root
+
+  # Password for the database
+  password: ""
+
+#
+# When formatting your message you can use the following variables:
+# {player} = Player the event was called for.
+# {killer} = Who killed the player that the event was called for (only works for 'death')
+# {tool} = Returns the tool used in a event.
+# {current} = Returns the current number of players on the server.
+# {max} = Returns the max number of players for the server (based on map config not server.properties).
+#
+messages:
+
+  # Sent when a player joins the match in pre-game
+  join: "&e{player} has joined ({current}/{max})."
+
+# Sent to a player when they join pre-game | {kills-required} - the amount of kills required to win | {map-name} - the name of the map | {change-interval} - the time between weapon changes
+greetings:
+  - "&2Welcome to Havok! You on playing on the map &b{map-name}.&r &2You win the game by getting &b{kills-required}&r &2kills."
+  - "&2You are randomly given a new weapon every &c{change-interval}&r &2seconds."
+  - "&2Your kills are displayed as your level as well as on the scoreboard."
+
+# Should time be allowed to change during games?
+allowTimeChange: false
+
+# What time of day should the server automatically be set to?
+startTime: 0
+
+# Random Spawns for the map
+spawns:
+  - ""
+  - ""
+  - ""
+  - ""
+
+# Potions applied to players
+potions:
+  - ""
+  - ""

@@ -1,0 +1,12 @@
+sg:
+    chestLocked: "&cThis chest seems to be locked or broken ..."
+    death: "{player} was killed by {killer} after {time}"
+    tilDeathMatch: "{count} player(s) remaining til death match"
+    deathMatchStarted: "Death match started!"
+    melonEaten: "You ate a melon. Half a heart regenerated!"
+    regainedHealth: "&aYou regained {health} health"
+    tributesRemaining: "&b{count} tributes remaining"
+    chestsRefilled: "Loot chests have been refilled!"
+    winner: "{player} won the game!"
+game:
+    death-match-countdown.message: "Death match starting in &l{seconds}"

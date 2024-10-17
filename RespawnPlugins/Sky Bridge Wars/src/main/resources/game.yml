@@ -1,0 +1,148 @@
+# General game information
+game:
+    id: 1
+    name: Sky Bridge Wars
+    authors: [Xisuma]
+    developers: [SpaceEmotion]
+
+# Countdown stuff
+countdown:
+    freezePlayers: true
+    seconds: 10
+
+# Handbook module
+handbook:
+    pages:
+    - The goal in Sky Bridge Wars is to infiltrate each others bases and decreasing their points until they have none left. The team with the highest points left is declared as the winner.
+    - Inside a building area players can build bridges to get to the other teams bases. The building material (sandstone) will be given each second. Each 30 seconds, an arrow will be given.
+    - With the sandstone one can buy upgrades and items at the shop at each base. When a player dies, he loses all its upgrades, respawns in his team area and the killer gets 32 sandstone as reward.
+
+# Team config for this game
+teams:
+    armor: true
+    list:
+        red:
+            players: 1
+            name: Red Team
+            startScore: 50
+        blue:
+            players: 1
+            name: Blue Team
+            startScore: 50
+    inventories:
+        main:
+            items:
+            - bow
+        red:
+            parent: main
+        blue:
+            parent: main
+
+# The shop configuration
+shop:
+    currency: sandstone
+    stock:
+        # General items
+        items:
+            0:
+                price: 32
+                item: flint and steel
+            1:
+                price: 32
+                item: tnt
+            2:
+                price: 8
+                item: ender stone
+            3:
+                price: 24
+                item: iron block
+            9:
+                price: 16
+                item: ladder
+            10:
+                # Strength potion
+                price: 48
+                item:
+                    material: potion
+                    effect: Increase Damage
+                    level: 1
+
+        # Upgradable items
+        upgrades:
+            6:
+                type: item
+                startItem: wood sword
+                levels:
+                -   price: 32
+                    item: stone sword
+                -   price: 48
+                    item: iron sword
+            7:
+                type: item
+                startItem: wood pickaxe
+                levels:
+                -   price: 24
+                    item: stone pickaxe
+                -   price: 32
+                    item: iron pickaxe
+            8:
+                type: armor
+                iconType: inherit
+                levels:
+                -   price: 48
+                    enchantments:
+                    - protection environmental 1
+                -   price: 64
+                    enchantments:
+                    - protection environmental 2
+
+# Regions
+regions:
+    list:
+        red:
+        blue:
+        build:
+            options:
+                allowBuild: true
+
+# Block protection stuff
+block-protection:
+    whitelist: true
+    materials:
+    - sandstone
+    - ender stone
+    - iron block
+    - ladder
+    - glass
+    - tnt
+    - coal block
+
+# Items that players receive after a certain amount of ticks
+gift:
+    20:
+        items:
+        - sandstone
+    600:
+        items:
+        - arrow
+
+# Y-Kill Actions
+yActions:
+    height: 120
+
+# Player mechanics
+mechanics:
+    itemDrops: false
+    respawns: true
+    noHunger: true
+    weatherChanges: false
+    rewards:
+        kill:
+        - 32 sandstone
+
+# Token stuff
+tokens:
+    sbw.winning: 1
+    sbw.teamDamage:
+        enabled: true
+        modifier: 0.1

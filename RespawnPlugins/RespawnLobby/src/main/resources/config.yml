@@ -1,0 +1,136 @@
+# MySQL stuff
+mysql:
+    host: 127.0.0.1
+    port: 3306
+    database: respawn
+    username: developer
+    password: password
+
+# Lobby world and spawn location
+world: world
+spawnPoint:
+    x: 0.5
+    y: 100
+    z: -21.5
+
+updateUUIDs: true
+walkSpeed: 0.02
+hideCooldown: 30 #Seconds
+
+# Welcome messages
+messages.welcome:
+- '&6Welcome to the RespawnNetwork.com'
+- '&6There are currently no games open for anyone.'
+- '&6However, you can use the creative plot world server!'
+
+# Enderpearl Navigation
+navigation:
+    title: '    &0mc.&aRespawn&0Network.com'
+    material: ender pearl
+    menu:
+        5:
+            title: '&4&lLobby'
+            enabled: true
+            item: compass
+            servers:
+            - lobby
+            - lobby_bravo
+            - lobby_charlie
+            - lobby_delta
+            description:
+            - '&cUse this to switch between'
+            - '&call the games.'
+        10:
+            title: '&2&lParkour'
+            enabled: true
+            item: diamond boots
+            servers:
+            - parkour
+            description:
+            - '&aNeed a break from PvP?'
+            - '&aCome and play our original'
+            - '&aparkour maps built by the'
+            - '&acommunity.'
+        11:
+            title: '&4&lHavok'
+            enabled: true
+            item: sulphur
+            servers:
+            - havok_lobby
+            description:
+            - '&cEvery 20 seconds you will'
+            - '&cget a new item to fight'
+            - '&cwith in this PvP deathmatch.'
+        12:
+            title: '&6&lGold Rush'
+            enabled: true
+            item: gold ingot
+            servers:
+            - gr_lobby
+            description:
+            - '&eTactical team based PvP,'
+            - '&eBalance fighting for gold'
+            - '&ewith gaining xp to buff your'
+            - '&egear and make you stronger.'
+            - '&eclassic by Xisuma!'
+        15:
+            title: '&1&lCreative'
+            enabled: true
+            item: diamond block
+            servers:
+            - creative
+            description:
+            - '&9This is currently whitelisted for'
+            - '&9previous spawnlings, until'
+            - '&9further notice'
+        16:
+            title: '&5&lSky Bridge Wars'
+            enabled: true
+            item: clay brick
+            servers:
+            - sbw_lobby
+            description:
+            - '&dSkybridge wars is taking the'
+            - '&doriginal Rush game to the next level,'
+            - '&dthemed around giant monsters in'
+            - '&dthe sky and battling across the'
+            - '&dvoid from either side.'
+        17:
+            title: '&6&lSlice Games'
+            enabled: true
+            item: golden apple
+            servers:
+            - sg_lobby
+            description:
+            - '&eDocms Survival Games with a twist'
+            - '&eRewarding health for aggression!'
+        18:
+            title: '&3&lPoint Runner'
+            enabled: true
+            item: emerald ore
+            servers:
+            - pr_lobby
+            description:
+            - '&bSpleef-like game revolving around'
+            - '&bcollecting points and multipliers while'
+            - '&btrying to stay alive. The player'
+            - '&bwith the most points wins.'
+
+# The lobby signs
+signs:
+    status:
+    -   x: 0
+        y: 0
+        z: 0
+    servers:
+        sg_1:
+            title: &aSurvival Games
+            map: &9Jungle
+            address: "foxtrot.srv.respawnnetwork.com"
+            port: 25566
+            premium: false
+            disabled: false
+            locations:
+            -   x: 10
+                y: 10
+                z: 10

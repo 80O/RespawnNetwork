@@ -1,0 +1,224 @@
+# General game information
+game:
+    id: 4
+    name: Slice Games
+    authors: [Docm77]
+    developers: [SpaceEmotion, TomShar]
+
+# ---------------- State configuration ----------------
+
+# Beginning countdown 5, 4, 3, 2, 1 .. GO
+countdown:
+    freezePlayers: true
+    seconds: 5
+
+# InGame state configuration, all values in seconds
+ingame:
+    gracePeriod: 30
+    refillInventoriesAfter: 300
+    endAfter: 600
+
+# Death match config
+death-match-countdown:
+    # Countdown related
+    freezePlayers: false
+    seconds: 5
+
+    # distance in blocks. (6-8 suggested)
+    arenaSpread: 6
+
+# ---------------- Module configuration ----------------
+
+# Where to teleport users when the game finishes
+bungee.lobbyServerName: hg_lobby
+
+# Token stuff
+tokens:
+    sg.winning: 20
+    lib.kills:
+        enabled: true
+        modifier: 3
+
+# Mechanics
+mechanics:
+    itemDrops: true
+    respawns: false
+    noHunger: false
+    weatherChanges: false
+
+gameRules:
+    doDaylightCycle: false
+
+# Main config
+slice-games:
+    # Number of players that should be in a death match
+    playersInDeathMatch: 3
+
+    # Random number of MAXIMUM items per inventory (1 - n)
+    randomItemsPerInventory: 5
+
+    # Randomized chest titles
+    chestTitles:
+        attributes:
+        - Rotten
+        - Reinforced
+        - Wooden
+        - Old
+        types:
+        - Chest
+        - Crate
+        - Treasure Chest
+
+    loot:
+    -   material: WOOD SWORD
+        min: 1
+        max: 1
+        weight: 0.8
+    -   material: LEATHER HELMET
+        min: 1
+        max: 1
+        weight: 0.5
+    -   material: LEATHER CHESTPLATE
+        min: 1
+        max: 1
+        weight: 0.2
+    -   material: LEATHER LEGGINGS
+        min: 1
+        max: 1
+        weight: 0.3
+    -   material: LEATHER BOOTS
+        min: 1
+        max: 1
+        weight: 0.5
+    -   material: GOLD SWORD
+        min: 1
+        max: 1
+        weight: 0.7
+    -   material: GOLD HELMET
+        min: 1
+        max: 1
+        weight: 0.4
+    -   material: GOLD LEGGINGS
+        min: 1
+        max: 1
+        weight: 0.4
+    -   material: GOLD BOOTS
+        min: 1
+        max: 1
+        weight: 0.4
+    -   material: GOLD INGOT
+        min: 2
+        max: 4
+        weight: 0.8
+    -   material: IRON HELMET
+        min: 1
+        max: 1
+        weight: 0.3
+    -   material: IRON LEGGINGS
+        min: 1
+        max: 1
+        weight: 0.25
+    -   material: IRON BOOTS
+        min: 1
+        max: 1
+        weight: 0.3
+    -   material: IRON INGOT
+        min: 2
+        max: 4
+        weight: 0.7
+    -   material: DIAMOND
+        min: 1
+        max: 2
+        weight: 0.01
+    -   material: STICK
+        min: 1
+        max: 2
+        weight: 0.7
+    -   material: BOW
+        min: 1
+        max: 1
+        weight: 0.6
+    -   material: ARROW
+        min: 3
+        max: 8
+        weight: 0.6
+    -   material: FLINT AND STEEL
+        min: 1
+        max: 1
+        weight: 0.4
+    -   material: APPLE
+        min: 1
+        max: 2
+        weight: 0.8
+    -   material: CARROT ITEM
+        min: 1
+        max: 2
+        weight: 0.6
+    -   material: POTATO ITEM
+        min: 1
+        max: 2
+        weight: 0.6
+    -   material: RAW BEEF
+        min: 1
+        max: 2
+        weight: 0.7
+    -   material: PORK
+        min: 1
+        max: 1
+        weight: 0.7
+    -   material: BAKED POTATO
+        min: 1
+        max: 2
+        weight: 0.4
+    -   material: GRILLED PORK
+        min: 1
+        max: 1
+        weight: 0.35
+    -   material: COOKED BEEF
+        min: 1
+        max: 1
+        weight: 0.35
+    -   material: WHEAT
+        min: 3
+        max: 6
+        weight: 0.5
+    -   material: SPECKLED MELON
+        min: 1
+        max: 4
+        weight: 0.9
+    -   material: WEB
+        min: 2
+        max: 3
+        weight: 0.2
+    -   material: TNT
+        min: 1
+        max: 2
+        weight: 0.2
+    -   material: ENDER PEARL
+        min: 1
+        max: 3
+        weight: 0.3
+    -   material: EXP BOTTLE
+        min: 2
+        max: 4
+        weight: 0.4
+    -   material: STONE SWORD
+        min: 1
+        max: 1
+        weight: 0.7
+    -   material: GOLD AXE
+        min: 1
+        max: 1
+        weight: 0.75
+    -   material: STONE AXE
+        min: 1
+        max: 1
+        weight: 0.75
+    -   material: WOOD AXE
+        min: 1
+        max: 1
+        weight: 0.85
+    -   material: FISHING ROD
+        min: 1
+        max: 1
+        weight: 0.6

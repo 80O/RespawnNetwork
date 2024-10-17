@@ -1,0 +1,68 @@
+# General game information
+game:
+    id: 3
+    name: PointRunner
+    authors: [Xisuma]
+    developers: [jasaush, SpaceEmotion, Ben Bancroft]
+
+token.multiplier: 0.001
+
+# Countdown stuff
+countdown:
+    freezePlayers: true
+    seconds: 5
+
+start-countdown:
+    freezePlayers: false
+    seconds: 10
+
+end-countdown:
+    freezePlayers: false
+    seconds: 30
+
+# Handbook module
+handbook:
+    pages:
+    - Point Runner is a spleef type of game. Instead of using a shovel and snow, you run around and get a certain amount of points
+    - depending on the ore block you just run over. Some maps might have special blocks that give you extra abilities, like speed,
+    - score multipliers and more!
+
+# Block protection stuff
+block-protection:
+    whitelist: true
+    materials: []
+
+# Player mechanics
+mechanics:
+    itemDrops: false
+    respawns: false
+    noHunger: true
+    invincible: true
+    weatherChanges: false
+
+# Specific PointRunner Settings
+point-runner:
+    allowJumps: true
+    deathBlock: stationary water
+    playersNeeded: 8
+    multiplier:
+        amount: 2
+        block: lapis block
+        cooldown: 10
+    blocks:
+        coal ore: 2
+        iron ore: 5
+        gold ore: 8
+        redstone ore: 12
+        diamond ore: 15
+        emerald ore: 18
+        lapis ore: 21
+
+score.name: Points
+
+# Token stuff
+tokens:
+    pr.winning: 1
+    pr.points:
+        enabled: true
+        modifier: 0.002

@@ -1,0 +1,107 @@
+# The map cycle type
+# Valid ones are: first, once, linear and random
+cycle: once
+
+defaults:
+    difficulty: easy
+    gameRule:
+        doMobSpawning: false
+
+# The list of maps
+maps:
+    world:
+        id: 0
+        spawnLocation:
+            world: world
+            x: 52.5
+            y: 110
+            z: 28.5
+
+        # The custom game config for this map.
+        # This will be merged with the general game config.
+        config:
+            slice-games:
+                deathMatchCenter:
+                    x: 52.5
+                    y: 72.5
+                    z: 28.5
+                podiums:
+                -   x: 52.5
+                    y: 86.5
+                    z: 14.5
+                -   x: 48.5
+                    y: 86.5
+                    z: 15.5
+                    yaw: -18
+                -   x: 44.5
+                    y: 86.5
+                    z: 16.5
+                    yaw: -36
+                -   x: 40.5
+                    y: 86.5
+                    z: 20.5
+                    yaw: -54
+                -   x: 39.5
+                    y: 86.5
+                    z: 24.5
+                    yaw: -72
+                -   x: 38.5
+                    y: 86.5
+                    z: 28.5
+                    yaw: -90
+                -   x: 39.5
+                    y: 86.5
+                    z: 32.5
+                    yaw: -108
+                -   x: 40.5
+                    y: 86.5
+                    z: 36.5
+                    yaw: -126
+                -   x: 44.5
+                    y: 86.5
+                    z: 40.5
+                    yaw: -144
+                -   x: 48.5
+                    y: 86.5
+                    z: 41.5
+                    yaw: -162
+                -   x: 52.5
+                    y: 86.5
+                    z: 42.5
+                    yaw: -180
+                -   x: 56.5
+                    y: 86.5
+                    z: 41.5
+                    yaw: -198
+                -   x: 60.5
+                    y: 86.5
+                    z: 40.5
+                    yaw: -216
+                -   x: 64.5
+                    y: 86.5
+                    z: 36.5
+                    yaw: -234
+                -   x: 65.5
+                    y: 86.5
+                    z: 32.5
+                    yaw: -252
+                -   x: 66.5
+                    y: 86.5
+                    z: 28.5
+                    yaw: -270
+                -   x: 65.5
+                    y: 86.5
+                    z: 24.5
+                    yaw: -288
+                -   x: 64.5
+                    y: 86.5
+                    z: 20.5
+                    yaw: -306
+                -   x: 60.5
+                    y: 86.5
+                    z: 16.5
+                    yaw: -324
+                -   x: 56.5
+                    y: 86.5
+                    z: 15.5
+                    yaw: -342

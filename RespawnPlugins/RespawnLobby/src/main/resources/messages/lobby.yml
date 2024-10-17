@@ -1,0 +1,6 @@
+lobby:
+    disabled: That server is currently disabled.
+    premiumOnly: You have to be a Premium or Investor Member to access {server}.
+    investorOnly: You have to be an Investor to access {server}.
+    vipOnly: You have to be a VIP to access {server}.
+    offline: That server is currently offline.

@@ -1,0 +1,46 @@
+# The map cycle type
+# Valid ones are: first, once, linear and random
+cycle: once
+
+# Default map configurations
+defaults:
+    autoSaving: false
+    gameRules:
+        doDaylightCycle: false
+    spawnLocation:
+        x: 0.5
+        y: 70
+        z: 0.5
+        yaw: 90
+
+# The list of maps
+maps:
+    world:
+        id: 1
+        spawnLocation.world: world
+        config:
+            point-runner.spawnLocations:
+                -   x: 40.5
+                    y: 55
+                    z: -20.5
+                -   x: 40.5
+                    y: 55
+                    z: 22.5
+                -   x: 21.5
+                    y: 55
+                    z: 40.5
+                -   x: -21.5
+                    y: 55
+                    z: 40.5
+                -   x: -39.5
+                    y: 55
+                    z: 21.5
+                -   x: -39.5
+                    y: 55
+                    z: -21.5
+                -   x: -20.5
+                    y: 55
+                    z: -39.5
+                -   x: 22.5
+                    y: 55
+                    z: -39.5

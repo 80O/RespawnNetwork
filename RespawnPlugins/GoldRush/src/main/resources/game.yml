@@ -1,0 +1,82 @@
+# General game information
+game:
+    id: 2
+    name: Gold Rush
+    authors: [Xisuma]
+    developers: [SpaceEmotion, PortalBlock, OliverVsCreeper]
+
+# Countdown stuff
+countdown:
+    freezePlayers: true
+    seconds: 10
+
+# Handbook module
+handbook:
+    pages:
+    - |
+      In GoldRush you have two teams trying to collect gold as fast as they can. In the middle of the map zombie pigman will spawn.
+      Kill them to get XP and their gold! Use the XP to buy stuff in the shop, and put the gold into the hopper at your base.
+    - Another way of getting XP is standing near the XP towers. If you are in an enemies base you cannot hurt them, but they can hurt you!
+
+# Team config for this game
+teams:
+    armor: true
+    list:
+        orange:
+            players: 1
+            name: Orange Team
+            chatColor: gold
+            color: "#D87F33"
+            startScore: 0
+        blue:
+            players: 1
+            name: Blue Team
+            startScore: 0
+    inventories:
+        main:
+            items:
+            - wood sword
+            - bow
+            - 3 arrow
+        orange:
+            parent: main
+        blue:
+            parent: main
+
+# Regions
+regions:
+    list:
+        orange:
+        blue:
+
+# Shops!
+gr-shop:
+    teleportDelay: 3
+
+# Block protection stuff
+block-protection:
+    whitelist: true
+    materials: []
+
+# Y-Kill Actions
+yActions:
+    height: 30
+
+# Player mechanics
+mechanics:
+    itemDrops: false
+    respawns: true
+    noHunger: true
+    weatherChanges: false
+
+# Score
+score:
+    name: "Gold Collected"
+    needed: 10
+
+# Token stuff
+tokens:
+    pr.winning: 1
+    pr.goldCollected:
+        enabled: true
+        modifier: 0.2

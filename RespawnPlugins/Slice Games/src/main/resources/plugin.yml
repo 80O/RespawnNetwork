@@ -1,0 +1,7 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.SliceGamesPlugin
+version: ${project.version}
+authors: [SpaceEmotion, TomShar]
+
+commands:
+  game:

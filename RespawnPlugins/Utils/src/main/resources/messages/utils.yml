@@ -1,0 +1,14 @@
+utils:
+
+  # Sent when Vault is not found
+  vaultNotFound: "Vault was not found or was not enabled! Vault based features will not work!"
+
+  # Sent when a permissions plugin is not found
+  permissionsNotFound: "No permissions plugin was found! Permissions based features will not work!"
+
+  # Sent when Vault is hooked properly
+  vaultHooked: "Vault has been hooked!"
+
+  # Sent when the plugin is reloaded
+  reload: "&2Config reloaded!"
+

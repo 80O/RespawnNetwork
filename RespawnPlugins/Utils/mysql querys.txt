@@ -1,0 +1,28 @@
+
+# Bans table
+
+CREATE TABLE IF NOT EXISTS bans(
+   Ban_ID INT NOT NULL AUTO_INCREMENT,
+   BannedUUID VARCHAR(70),
+   BannerUUID VARCHAR(70),
+   Reason VARCHAR(50),
+   Ban_TimeStamp VARCHAR(30),
+   Ban_Type VARCHAR(30),
+   Proof VARCHAR(255),
+   PRIMARY KEY(Ban_ID)
+);
+
+# Ban Records Table
+
+CREATE TABLE IF NOT EXISTS ban_history(
+   Ban_ID INT NOT NULL AUTO_INCREMENT,
+   Ban_Type VARCHAR(30),
+   TargetUUID VARCHAR(70),
+   SenderUUID VARCHAR(70),
+   Reason VARCHAR(50),
+   TimeStamp VARCHAR(50),
+   Ban_Length VARCHAR(30),
+   Proof VARCHAR(255),
+   PRIMARY KEY(Ban_ID)
+);
+

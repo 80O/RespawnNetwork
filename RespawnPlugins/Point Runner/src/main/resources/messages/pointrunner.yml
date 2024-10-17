@@ -1,0 +1,6 @@
+game:
+    win: "{winner} wins this round with {points} {pointStr}."
+    death: "{player} died :("
+    start-countdown.message: "Game will be starting in {seconds} sec."
+    countdown.message: "Get ready in {seconds}..."
+    end-countdown.message: "Game will be ending in {seconds} sec."

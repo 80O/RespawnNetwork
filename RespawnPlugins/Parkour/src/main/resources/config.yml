@@ -1,0 +1,57 @@
+database:
+  host: 127.0.0.1
+  user: root
+  port: 3306
+  pass:
+  name: xpd_parkour
+QueryHost:
+QueryPort:
+tokensEnabled: false
+course-selection-menu:
+  rows: 1
+  title: 
+boots:
+  100:
+    id: 313
+    enchantments: ['PROTECTION_FALL 10']
+  69:
+    id: 313
+  44:
+    id: 317
+  29:
+    id: 309
+  19:
+    id: 305
+  17:
+    id: 301
+    leather-rgb: [0, 255, 0]
+  15:
+    id: 301
+    leather-rgb: [0, 232, 0]
+  13:
+    id: 301
+    leather-rgb: [0, 209, 0]
+  11:
+    id: 301
+    leather-rgb: [0, 186, 0]
+  9:
+    id: 301
+    leather-rgb: [0, 163, 0]
+  7:
+    id: 301
+    leather-rgb: [0, 140, 0]
+  5:
+    id: 301
+    leather-rgb: [0, 117, 0]
+  3:
+    id: 301
+    leather-rgb: [0, 94, 0]
+  2:
+    id: 301
+    leather-rgb: [0, 71, 0]
+  1:
+    id: 301
+    leather-rgb: [0, 48, 0]
+  0:
+    id: 301
+    leather-rgb: [0, 25, 0]

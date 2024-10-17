@@ -1,0 +1,22 @@
+# Utils Config
+
+# What prefix should be used for the plugin? | {name} is replaced with the plugin name
+prefix: "&f[&r&2{name}&r&f] "
+
+# Should configs be automatically saved on shutdown?
+autoSaveConfigs: false
+
+# Teams settings
+teams:
+
+  # Should players automatically be sorted into teams by group?
+  auto-sort-players: true
+
+  # How often groups are refreshed
+  refresh-time: 5 # minutes
+
+  # Colors to use for groups
+  groupColors:
+
+    # The color to use for the admin group
+    admin: "&c"

@@ -1,0 +1,6 @@
+game:
+    countdown.message: "Game will be starting in {seconds} sec."
+    begin: "Let the games begin!"
+    map-playing: "You are playing on &l{map}&r&6 created by {creators}"
+    tokens:
+        received: "&bYou got {tokens} {tokenStr} for all {statistic}"

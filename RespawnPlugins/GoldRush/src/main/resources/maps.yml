@@ -1,0 +1,83 @@
+# The map cycle type
+# Valid ones are: first, once, linear and random
+cycle: once
+
+defaults:
+    difficulty: easy
+    spawnLocation:
+        x: 0.5
+        y: 128.5
+        z: 0.5
+        yaw: 90
+    gameRules:
+        doDaylightCycle: false
+
+# The list of maps
+maps:
+    Alpha:
+        id: 1
+        spawnLocation.world: Alpha
+
+        # The custom game config for this map.
+        # This will be merged with the general game config.
+        config:
+            teams.list:
+                orange.spawnLocation:
+                    x: 0.5
+                    y: 82.5
+                    z: -41.5
+
+                blue.spawnLocation:
+                    x: 0.5
+                    y: 82.5
+                    z: 42.5
+                    yaw: 180
+
+            regions.list:
+                blue:
+                    min: 15, 71, 40
+                    max: -13, 85, 51
+                orange:
+                    min: -13, 71, -40
+                    max: 14, 85, -50
+
+            # The shop configuration
+            gr-shop:
+                signs:
+                -   type: effect
+                    locations:
+                    -   x: 4
+                        y: 82
+                        z: -49
+                    price: 10
+                    target: RANDOM OPPONENT
+                    type: damage
+
+                -   type: item
+                    locations:
+                    -   x: 4
+                        y: 82
+                        z: -49
+                    price: 10
+                    item:
+                        material: potion
+                        effect: heal
+                        level: 1
+                        amount: 3
+
+                -   type: teleport
+                    locations:
+                    -   x: 0
+                        y: 82
+                        z: -49
+                    price: 32
+                    name: Diamond Teleporters
+                    teleports:
+                    -   from:
+                            x: 23
+                            y: 73
+                            z: 0
+                        to:
+                            x: -7
+                            y: 77
+                            z: -35

@@ -1,0 +1,11 @@
+shop:
+    isEmpty: "Oh no, The shop is empty! Please come back later."
+    error:
+        notAvailable: "The shop is currently not available"
+        notEnoughMoney: "You don't have enough {currency} to buy {item}&r for {price}"
+        notEnoughSpace: "You don't have enough space to buy that!"
+        upgrade:
+            noArmor: "You need to have some armor on to do this upgrade"
+    success:
+        normal: "You bought {count} {item}&r for {price} {currency}"
+        upgrade: "You successfully upgraded your {type}"

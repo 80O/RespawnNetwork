@@ -1,0 +1,8 @@
+name: XPDParkour
+version: 1.0
+main: im.xpd.parkour.Main
+commands:
+  checkpoint:
+    description: Teleport to your last checkpoint.
+  return:
+    description: Teleport back to the lobby.
